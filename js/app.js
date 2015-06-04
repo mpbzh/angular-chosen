@@ -21,7 +21,7 @@ angular.module('Chosen', [])
         // update the select when the model changes
         scope.$watch(attr.ngModel, function() {
             element.trigger('chosen:updated');
-        });
+        }, true);
         
         element.chosen();
     };
